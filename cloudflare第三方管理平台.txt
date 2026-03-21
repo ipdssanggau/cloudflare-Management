@@ -20,8 +20,18 @@ const DEFAULT_BATCH_TEMPLATES = [
     sourceWorkerName: 'edge',
     workerName: 'edge',
     scriptUrl: 'https://raw.githubusercontent.com/cmliu/edgetunnel/refs/heads/main/_worker.js',
-    env: [{ key: 'admin', value: '' }],
-    kv: [{ bind: 'KV', name: 'CMliu' }],
+    env: [{ key: 'admin', value: '123456' }],
+    kv: [{ bind: 'KV', name: 'cmliu_kv' }],
+    d1: []
+  },
+  {
+    key: 'laowang',
+    templateName: 'laowang',
+    sourceWorkerName: 'laowang',
+    workerName: 'laowang',
+    scriptUrl: 'https://raw.githubusercontent.com/eooce/Cloudflare-proxy/refs/heads/main/_worker.js',
+    env: [{ key: 'PASSWORD', value: '123456' }],
+    kv: [],
     d1: []
   },
   {
@@ -31,8 +41,18 @@ const DEFAULT_BATCH_TEMPLATES = [
     workerName: 'joey',
     scriptUrl: 'https://raw.githubusercontent.com/byJoey/cfnew/refs/heads/main/%E5%B0%91%E5%B9%B4%E4%BD%A0%E7%9B%B8%E4%BF%A1%E5%85%89%E5%90%97',
     env: [{ key: 'u', value: '119d4f24-fe13-40ec-9df0-8fe19d30b914' }],
-    kv: [{ bind: 'C', name: 'Joey' }],
+    kv: [{ bind: 'C', name: 'Joey_kv' }],
     d1: []
+  },
+  {
+    key: 'lh',
+    templateName: 'liehuo',
+    sourceWorkerName: 'liehuo',
+    workerName: 'liehuo',
+    scriptUrl: 'https://raw.githubusercontent.com/xtgm/stallTCP1.32V2/refs/heads/main/_worker.js',
+    env: [{ key: 'UUID', value: '119d4f24-fe13-40ec-9df0-8fe19d30b914' },{ key: 'WP', value: '123456' },{ key: 'SUB_PWD', value: '123456' }],
+    kv: [{ bind: 'LH', name: 'lh_kv' }],
+    d1: [{ bind: 'DB', name: 'lh_db' }]
   }
 ];
 
