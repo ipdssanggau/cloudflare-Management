@@ -21,5 +21,5 @@
 
   - 使用Cloudflare得workers部署。
   - 推荐添加变量名称为大写的ACCESS_PASSWORD，建立访问密码。不设则不启用密码保护。
-  - 绑定建立的KV空间，变量名为大写的CF_ACCOUNTS_KV，内置脚本。
+  - 绑定建立的KV空间，变量名为大写的CF_ACCOUNTS_KV，内置批量work脚本配置。
   - 批量导入格式为：每行一个账号，格式：邮箱|GlobalApiKey。
